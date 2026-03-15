@@ -24,7 +24,7 @@ class _LoginPageState extends State<LoginPage> {
     super.dispose();
   }
 
-  // EMAIL & PASSWORD LOGIN
+
   Future<void> _signInWithEmail() async {
     if (_emailController.text.isEmpty || _passwordController.text.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
@@ -93,11 +93,11 @@ class _LoginPageState extends State<LoginPage> {
               ),
               const SizedBox(height: 32),
 
-              // ✅ EMAIL FIELD - BLACK TEXT
+              
               TextField(
                 controller: _emailController,
                 keyboardType: TextInputType.emailAddress,
-                style: const TextStyle(color: Colors.black, fontSize: 16), // ✅ BLACK TEXT
+                style: const TextStyle(color: Colors.black, fontSize: 16), 
                 decoration: InputDecoration(
                   labelText: 'Email',
                   prefixIcon: const Icon(Icons.email_outlined, color: Colors.black54),
@@ -116,11 +116,11 @@ class _LoginPageState extends State<LoginPage> {
               ),
               const SizedBox(height: 16),
 
-              // ✅ PASSWORD FIELD - BLACK TEXT
+        
               TextField(
                 controller: _passwordController,
                 obscureText: true,
-                style: const TextStyle(color: Colors.black, fontSize: 16), // ✅ BLACK TEXT
+                style: const TextStyle(color: Colors.black, fontSize: 16), 
                 decoration: InputDecoration(
                   labelText: 'Password',
                   prefixIcon: const Icon(Icons.lock_outline, color: Colors.black54),
@@ -139,7 +139,7 @@ class _LoginPageState extends State<LoginPage> {
               ),
               const SizedBox(height: 24),
 
-              // SIGN IN BUTTON
+              
               SizedBox(
                 width: double.infinity,
                 height: 50,

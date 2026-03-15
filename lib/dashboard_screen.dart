@@ -55,7 +55,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
       _csvData.clear();
       _csvLoaded = false;
     });
-    _addMessage('🗑️ CSV cleared! Ready for new file.', 'bot');
+    _addMessage(' CSV cleared! Ready for new file.', 'bot');
   }
 
   Future<void> _loadCSV() async {
@@ -63,7 +63,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
       String csvText = await _csvFile!.readAsString();
       _csvData = const CsvToListConverter().convert(csvText);
     } catch (e) {
-      _addMessage('❌ CSV Error: $e', 'bot');
+      _addMessage('CSV Error: $e', 'bot');
     }
   }
 
@@ -124,7 +124,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
         }
       }
     }
-    while (data.length < 8) data.add(data.isEmpty ? 1000.0 : data.last * 0.9);
+    while (data.length < 8) {
+      data.add(data.isEmpty ? 1000.0 : data.last * 0.9);
+    }
     return data;
   }
 

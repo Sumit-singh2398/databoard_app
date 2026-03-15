@@ -12,7 +12,6 @@ dependencies:
   flutter:
     sdk: flutter
 
-  # Flutter icons & UI
   cupertino_icons: ^1.0.8
   fl_chart: ^1.2.0
 
@@ -23,11 +22,6 @@ dependencies:
   csv: ^6.0.0
   shared_preferences: ^2.5.4
   firebase_storage: ^13.1.0
-
-  # Google sign-in
-  google_sign_in: ^7.2.0
-
-  # File & Path handling
   file_picker: ^10.3.10
   path_provider: ^2.1.5
 
