@@ -1,0 +1,46 @@
+name: databoard_app
+description: "A new Flutter project for AI Dashboard with Firebase login."
+
+publish_to: 'none' # Private package
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.9.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Flutter icons & UI
+  cupertino_icons: ^1.0.8
+  fl_chart: ^1.2.0
+
+  # Firebase
+  firebase_core: ^4.5.0
+  firebase_auth: ^6.2.0
+  cloud_firestore: ^6.1.3
+  csv: ^6.0.0
+  shared_preferences: ^2.5.4
+  firebase_storage: ^13.1.0
+
+  # Google sign-in
+  google_sign_in: ^7.2.0
+
+  # File & Path handling
+  file_picker: ^10.3.10
+  path_provider: ^2.1.5
+
+  # Gemini (AI integration)
+  flutter_gemini: ^3.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/google_logo.png

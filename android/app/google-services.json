@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "786464921191",
+    "project_id": "databoard-e995b",
+    "storage_bucket": "databoard-e995b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:786464921191:android:211d4afc3c30186f7fa6c2",
+        "android_client_info": {
+          "package_name": "com.example.databoard_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBscl_pw2ntPQOW7uUzVx6zLOY7CYp-z5E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
