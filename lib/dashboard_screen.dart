@@ -24,7 +24,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
   @override
   void initState() {
     super.initState();
-    Gemini.init(apiKey: 'AIzaSyA8SxF-NGg9hkSNzRwlH0qUMpul52lPamQ');
+    Gemini.init(apiKey: 'AIzaSyA8SxF-NGg9hkSNzRwlH0qUMpul52lPamQ ');
   }
 
   @override
