@@ -24,7 +24,6 @@ class _LoginPageState extends State<LoginPage> {
     super.dispose();
   }
 
-
   Future<void> _signInWithEmail() async {
     if (_emailController.text.isEmpty || _passwordController.text.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
@@ -80,24 +79,44 @@ class _LoginPageState extends State<LoginPage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Icon(Icons.lock_outline, size: 80, color: Colors.blue),
+              // 🔥 APP ICON ADDED HERE
+              Image.asset(
+                'assets/WhatsApp.jpeg',
+                width: 120,
+                height: 120,
+                fit: BoxFit.contain,
+              ),
+              const SizedBox(height: 32),
+              
+              const Icon(
+                Icons.lock_outline, 
+                size: 80, 
+                color: Colors.blue
+              ),
               const SizedBox(height: 16),
+              
               const Text(
                 'Welcome Back', 
-                style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold)
+                style: TextStyle(
+                  fontSize: 28, 
+                  fontWeight: FontWeight.bold
+                )
               ),
               const SizedBox(height: 8),
               Text(
                 'Sign in to continue', 
-                style: TextStyle(fontSize: 16, color: Colors.grey[600])
+                style: TextStyle(
+                  fontSize: 16, 
+                  color: Colors.grey
+                )
               ),
               const SizedBox(height: 32),
 
-              
+              // Email Field
               TextField(
                 controller: _emailController,
                 keyboardType: TextInputType.emailAddress,
-                style: const TextStyle(color: Colors.black, fontSize: 16), 
+                style: const TextStyle(color: Colors.black, fontSize: 16),
                 decoration: InputDecoration(
                   labelText: 'Email',
                   prefixIcon: const Icon(Icons.email_outlined, color: Colors.black54),
@@ -111,16 +130,19 @@ class _LoginPageState extends State<LoginPage> {
                   filled: true,
                   fillColor: Colors.grey[50],
                   labelStyle: const TextStyle(color: Colors.black54),
-                  contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                  contentPadding: const EdgeInsets.symmetric(
+                    horizontal: 16, 
+                    vertical: 16
+                  ),
                 ),
               ),
               const SizedBox(height: 16),
 
-        
+              // Password Field
               TextField(
                 controller: _passwordController,
                 obscureText: true,
-                style: const TextStyle(color: Colors.black, fontSize: 16), 
+                style: const TextStyle(color: Colors.black, fontSize: 16),
                 decoration: InputDecoration(
                   labelText: 'Password',
                   prefixIcon: const Icon(Icons.lock_outline, color: Colors.black54),
@@ -134,12 +156,15 @@ class _LoginPageState extends State<LoginPage> {
                   filled: true,
                   fillColor: Colors.grey[50],
                   labelStyle: const TextStyle(color: Colors.black54),
-                  contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                  contentPadding: const EdgeInsets.symmetric(
+                    horizontal: 16, 
+                    vertical: 16
+                  ),
                 ),
               ),
               const SizedBox(height: 24),
 
-              
+              // Sign In Button
               SizedBox(
                 width: double.infinity,
                 height: 50,
@@ -164,7 +189,10 @@ class _LoginPageState extends State<LoginPage> {
                         )
                       : const Text(
                           'Sign In', 
-                          style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)
+                          style: TextStyle(
+                            fontSize: 16, 
+                            fontWeight: FontWeight.bold
+                          )
                         ),
                 ),
               ),
