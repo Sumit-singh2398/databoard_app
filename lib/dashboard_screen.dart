@@ -60,7 +60,6 @@ class _DashboardScreenState extends State<DashboardScreen> {
 
   final List<ChatMessage> _messages = [];
 
-  File? _csvFile;
   String? _csvFileName;
   List<List<dynamic>> _csvData = [];
 
@@ -105,7 +104,6 @@ class _DashboardScreenState extends State<DashboardScreen> {
 
     setState(() {
       _isLoading = true;
-      _csvFile = file;
       _csvFileName = result.files.single.name;
     });
 
@@ -143,7 +141,6 @@ class _DashboardScreenState extends State<DashboardScreen> {
 
   void _clearCSV() {
     setState(() {
-      _csvFile = null;
       _csvFileName = null;
       _csvData.clear();
       _csvLoaded = false;
